@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Avenir-Roman, sans-serif;
+        background-image: linear-gradient(to bottom right, red, yellow);
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        top:0;
+        right: 0;
+        left: 0;
+
+    }
+    form{
+        margin-top: 100px;
+    }
+    h1{
+        text-align: center;
+        margin-top: 40px;
+    }
+    button{
+        padding: 10px;
+        background-color: #000;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 15px;
+
+    }
+    button:hover{
+        background-color: rgba(114, 100, 100, 0.97);
+        cursor: pointer;
+        opacity: 0.5;
+        color: black;
+    }
+    input{
+        font-size: 15px;
+        padding: 10px;
+    }
+    label{
+        font-size: 20px;
+        color: #000000;
+    }
+    .bg_img{
+        background-color: red;
+        height: 100%;
+    }
+</style>
+<script>
+</script>
+<body>
+    <div class="container">
+        <form method="post">
+            <label ><b>Input Comment: </b></label>
+            <input type="text" placeholder="Enter Comment" name="cmt" required>
+            <button type="submit">Submit</button>
+            <h1>{{result}}</h1>
+        </form>
+    </div>
+</body>
+</html>
